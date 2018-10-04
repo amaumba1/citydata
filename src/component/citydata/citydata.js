@@ -23,7 +23,7 @@ class CityData extends Component {
     if (!this.state.crimeData.data) {
       return <div>Loading...</div>
     } 
-    console.log(this.state.crimeData)
+     console.log(this.state.crimeData)
     let output = ''
       return this.state.crimeData.data.forEach((crime) => {
         output += <li>{crime.initialtypetext}</li>
@@ -35,7 +35,7 @@ class CityData extends Component {
     return ( 
       <div>
         NOLA Data
-   
+        {this.renderCrimeData()}
       </div>
     )
   }
